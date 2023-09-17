@@ -1,0 +1,425 @@
+/* styles.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color:rgba(220, 235, 222, 100);
+  background: #e8cb9a;
+}
+
+/* confi Navbar Logeado */
+
+.img a img{
+  width: 10rem;
+  height: 5rem;
+}
+
+nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); /* Color de fondo oscuro con transparencia */
+  z-index: -1; /* Asegura que el overlay esté detrás del contenido de la barra de navegación */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-image: url(img/fondo.png);
+  background-size: 100%;
+  font-size: 1.2rem;
+}
+
+.nav-item a{
+  color: #ffffff;
+}
+.nav-item a:hover{
+  color: #000 ;
+}
+.nav-item a:hover {
+  transform: translateY(-3px);
+}
+.navbar-toggler{
+  border-color:  #ffffff ;
+
+}
+
+.dropdown-item{
+  color: #000000 !important;
+  
+}
+.dropdown-menu a{
+  text-align: left;
+  float: right;
+}
+
+
+/* Logo a la parte izquierda */
+.navbar-brand {
+  margin-right: auto;
+}
+
+/* Ofertas y productos centrados */
+.navbar-nav {
+  justify-content: center;
+}
+
+/* Usuario y carrito en la parte derecha */
+.dropdown {
+  margin-left: auto;
+}
+
+
+
+main .carousel-slide img{   
+  max-height: 60vh;
+  object-fit: fill;
+}
+
+#carouselExampleSlidesOnly {
+  position: relative;
+}
+#carouselExampleSlidesOnly .overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  color: #ffffff;
+}
+
+/* Apartado Carrusel */
+/* Estilos generales para todas las pantallas */
+.overlay h1 {
+  font-size: 24px;
+}
+
+.overlay h2 {
+  font-size: 18px;
+}
+
+/* Estilos específicos para pantallas grandes (lg) */
+@media (min-width: 992px) {
+  .navbar-collapse{
+    margin-left: -5rem;
+  }
+  .overlay h1 {
+    font-size: 45px;
+  }
+
+  .overlay h2 {
+    font-size: 24px;
+  }
+}
+
+/* Estilos específicos para pantallas medianas (md) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .overlay h1 {
+    font-size: 30px;
+  }
+
+  .overlay h2 {
+    font-size: 20px;
+  }
+}
+
+/* Estilos específicos para pantallas pequeñas (sm) */
+@media (max-width: 767px) {
+  .overlay h1 {
+    font-size: 24px;
+  }
+
+  .overlay h2 {
+    font-size: 16px;
+  }
+}
+
+.read-more-content {
+  display: none;
+}
+
+.read-more-button {
+  display: none;
+  margin-top: 10px;
+  background-color: #ffffff;
+  border: 1px solid #888888;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .read-more-toggle {
+    display: none;
+  }
+  
+  .read-more-button {
+    display: inline-block;
+  }
+}
+
+
+/* Apartado Asesoria */
+.custom-img-size {
+  width: 100%;
+  height: 200px; /* Cambia esta medida a la deseada */
+  object-fit: cover;
+  border-radius: .7rem;
+}
+
+/* Estilos generales para todas las pantallas */
+.asesoria h1 {
+  font-size: 20px;
+}
+
+.asesoria h2 {
+  font-weight: normal;
+  font-size: 18px;
+}
+.asesoria .card{
+  margin-top: 2rem;
+  border-radius: 1rem;
+  background: #ede9e2;
+}
+.asesoria .card-title{
+  font-size: 1.2rem;
+}
+.asesoria .card-text{
+  font-size: .9rem;
+}
+.asesoria .collapse{
+  font-size: .9rem;
+}
+
+/* Estilos específicos para pantallas grandes (lg) */
+@media (min-width: 992px) {
+  .asesoria h1 {
+    font-size: 32px;
+  }
+
+  .asesoria h2 {
+    font-size: 20px;
+  }
+}
+
+/* Estilos específicos para pantallas medianas (md) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .asesoria h1 {
+    font-size: 30px;
+  }
+
+  .asesoria h2 {
+    font-size: 20px;
+  }
+}
+
+/* Estilos específicos para pantallas pequeñas (sm) */
+@media (max-width: 767px) {
+  .asesoria h1 {
+    font-size: 24px;
+  }
+
+  .asesoria h2 {
+    font-size: 16px;
+  }
+}
+
+
+/* Publicidad */
+
+.module-section {
+  padding: 50px 0;
+}
+
+.module-section .card {
+  border-radius: 10px;
+  background-color: #d1b585;
+}
+
+.module-section .card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.module-section .card-text {
+  margin-bottom: 20px;
+}
+
+#card-mision .card {
+  margin: 0;
+  background-color: #ede9e2;
+}
+#card-mision .card h3{
+  color: #000;
+}
+#card-mision .card p{
+  color: #000;
+}
+.module-section .card-vision {
+  display: flex;
+  justify-content: center;
+}
+
+.module-section .card-vision img {
+  margin-top: 2rem;
+  max-width: 40vw;
+  max-height: 20vh;
+}
+
+.module-section .card-mision {
+  display: flex;
+  justify-content: center;
+}
+
+.module-section .card-mision img {
+  margin-top: 2rem;
+  max-width: 25vw;
+  max-height: 25vh;
+}
+
+.module-section .btn {
+  border-radius: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.module-section .btn-light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.module-section .btn-outline-light {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.module-section .btn-light:hover,
+.module-section .btn-light:focus,
+.module-section .btn-outline-light:hover,
+.module-section .btn-outline-light:focus {
+  background-color: #e6e6e6;
+  border-color: #e6e6e6;
+  color: #000000;
+}
+
+
+/* Servicios */
+
+.Servicios .module-section {
+  padding: 50px 0;
+}
+
+.Servicios .card {
+  border-radius: 10px;
+  background-color: #fff;
+  background: #ede9e2;
+}
+
+.Servicios .card-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.Servicios .card-text {
+  margin-bottom: 20px;
+  color: #000;
+}
+.Servicios .img-centrada {
+  display: flex;
+  justify-content: center;
+}
+
+.Servicios .img-centrada img {
+  margin-top: 5vh;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+/* Formulario de contacto */
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+form button {
+  background-color: #c2a77c;
+  color: #000;
+  padding: 10px 20px;
+  border:hidden;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+form button:focus {
+  outline: none;
+}
+
+
+
+
+
+/* Pie de página */
+footer::before {
+  background-color: rgba(0, 0, 0, 0.3); /* Color de fondo oscuro con transparencia */
+  z-index: -1; /* Asegura que el overlay esté detrás del contenido del footer */
+}
+
+footer {
+  background-image: url(img/fondo.png);
+  background-size: 100%;
+}
+
+
+footer img{
+  height: 2rem;
+  width: 2rem;
+}
+.footer {
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+footer .text-white {
+  color: #000 !important;
+}
+
+footer h4 {
+  color: #000;
+}
+
+footer p {
+  color: #000;
+}
+
+footer li {
+  color: #000;
+}
